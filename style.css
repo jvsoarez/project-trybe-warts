@@ -7,9 +7,36 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
   display: flex;
+  margin: 0 10px;
+  flex-flow: row wrap;
 }
 
+.trybewarts-header-logo {
+  width: 84px;
+  margin: 0 10px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: xxx-large;
+}
+
+.trybewarts-login input {
+  height: 30px;
+  border-radius: 8px;
+  margin: 0px 5px;
+  background-color: white;
+}
+
+.trybewarts-login button {
+  background-color: rgb(80, 26, 124);
+  color: white;
+  width: 100px;
+  border-radius: 8px;
+}
