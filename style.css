@@ -30,7 +30,7 @@
 .trybewarts-login input {
   height: 30px;
   border-radius: 8px;
-  margin: 0px 5px;
+  margin: 0 5;
   background-color: white;
 }
 
