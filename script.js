@@ -4,7 +4,6 @@ const loginButton = document.getElementById('login-button');
 
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log('OI');
   if (loginInputEmail.value === 'tryber@teste.com' && loginInputPass.value === '123456') {
     alert('Olá, Tryber!');
   } else {
