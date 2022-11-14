@@ -71,3 +71,9 @@ main {
 #house {
   width: 140px;
 }
+
+#family-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px;
+}
