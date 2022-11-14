@@ -54,3 +54,20 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.form-input-container {
+  text-align: center;
+}
+
+#form-title-container {
+  width: 675px;
+  margin: 20px;
+}
+
+#form-title-container h1 {
+  text-align: center;
+}
+
+#house {
+  width: 140px;
+}
