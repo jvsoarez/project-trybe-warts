@@ -20,3 +20,11 @@ agreementCheckbox.addEventListener('change', () => {
     submitBtn.disabled = false;
   }
 });
+
+const textarea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+
+textarea.addEventListener('input', () => {
+  const num = textarea.value.length;
+  counter.innerText = 500 - num;
+});
