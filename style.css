@@ -25,7 +25,7 @@ main {
 
 #form-title-container h1 {
   text-align: center;
-  margin: 4% auto 2% auto;
+  margin: 4% auto 2%;
 }
 
 #first-container {
@@ -47,7 +47,7 @@ main {
   margin: 0 3px;
 }
 
-.form-input-name-email-container input, .form-input-house-container input {
+.form-input-name-email-container input , .form-input-house-container input {
   height: 35px;
   width: 220px;
   margin-bottom: 10px;
@@ -130,5 +130,6 @@ main {
   width: 45%;
   text-align: center;
   margin: auto;
+
   /* background-color: blue; */
 }
