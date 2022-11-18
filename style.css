@@ -1,7 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+}
 
+body {
+  background-color: rgb(243, 241, 241);
 }
 
 .header {
@@ -9,6 +13,68 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+#form-title-container {
+  width: 675px;
+}
+
+#form-title-container h1 {
+  text-align: center;
+  margin: 4% auto 2% auto;
+}
+
+#first-container {
+  display: flex;
+  margin: 1% auto;
+}
+
+.form-input-name-email-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3px;
+}
+
+.form-input-house-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3px;
+}
+
+.form-input-name-email-container input, .form-input-house-container input {
+  height: 35px;
+  width: 220px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+
+#house-select-container {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#house-select-container select {
+  height: 35px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#line {
+  border: 1px solid rgb(188, 186, 186);
+  width: 446px;
+  margin: 0 auto;
 }
 
 .trybewarts-login {
@@ -30,20 +96,19 @@
 .trybewarts-login input {
   height: 30px;
   border-radius: 8px;
-  margin: 0 5;
+  border: 1px solid white;
+  margin: 0 3px;
   background-color: white;
 }
 
 .trybewarts-login button {
   background-color: rgb(80, 26, 124);
   color: white;
+  border: none;
   width: 100px;
   border-radius: 8px;
 }
 
-main {
-  display: flex;
-}
 
 #evaluation-form {
   display: flex;
@@ -55,26 +120,15 @@ main {
   height: 500px;
 }
 
-.form-input-container {
-  text-align: center;
-}
-
-#form-title-container {
-  width: 675px;
-  margin: 20px;
-}
-
-#form-title-container h1 {
-  text-align: center;
-}
-
-#house {
-  width: 140px;
-}
-
 #family-container {
   display: flex;
   flex-direction: column;
   margin: 10px 50px;
 }
 
+#image-container {
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  /* background-color: blue; */
+}

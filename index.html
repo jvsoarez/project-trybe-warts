@@ -22,20 +22,25 @@
   </section>
   <main>
     <form action="" id="evaluation-form">
-      <div class="form-input-container">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
-      </div>
-      <div class="form-input-container">
-        <input type="text" id="input-email" placeholder="Email">
-        <label for="house">Casa:</label>
-        <select name="casa" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-      </div>
+      <section id="first-container">
+        <section class="form-input-name-email-container">
+          <input type="text" id="input-name" placeholder="Nome">
+          <input type="text" id="input-email" placeholder="Email">
+        </section>
+        <section class="form-input-house-container">
+          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <div id="house-select-container">
+            <label for="house">Casa:</label>
+            <select name="casa" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+          </div>
+        </section>
+      </section>
+      <div id="line"></div>
       <div id="family-container">
         <label for="" id="label-family">Qual sua família?</label>
         <div>
@@ -85,7 +90,9 @@
           <button type="submit" id="submit-btn" disabled="true">Enviar</button>
         </div>
     </form>
-    <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="">
+    <section id="image-container">
+      <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="">
+    </section>
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
