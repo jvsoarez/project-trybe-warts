@@ -15,12 +15,50 @@ body {
   align-items: center;
 }
 
+.trybewarts-header-logo {
+  width: 84px;
+  margin: 0 10px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: xxx-large;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin: 0 10px;
+  flex-flow: row wrap;
+}
+
+.trybewarts-login input {
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid white;
+  margin: 0 3px;
+  background-color: white;
+}
+
+.trybewarts-login button {
+  background-color: rgb(80, 26, 124);
+  color: white;
+  border: none;
+  width: 100px;
+  border-radius: 8px;
+}
+
 main {
   display: flex;
 }
 
 #form-title-container {
   width: 675px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
 
 #form-title-container h1 {
@@ -57,7 +95,6 @@ main {
   border: 1px solid white;
 }
 
-
 #house-select-container {
   width: 50%;
   display: flex;
@@ -84,59 +121,57 @@ main {
   margin: 0 auto;
 }
 
-.trybewarts-login {
+#second-container {
   display: flex;
-  margin: 0 10px;
-  flex-flow: row wrap;
-}
-
-.trybewarts-header-logo {
-  width: 84px;
-  margin: 0 10px;
-}
-
-#trybewarts-header-title {
-  color: white;
-  font-size: xxx-large;
-}
-
-.trybewarts-login input {
-  height: 30px;
-  border-radius: 8px;
-  border: 1px solid white;
-  margin: 0 3px;
-  background-color: white;
-}
-
-.trybewarts-login button {
-  background-color: rgb(80, 26, 124);
-  color: white;
-  border: none;
-  width: 100px;
-  border-radius: 8px;
-}
-
-
-#evaluation-form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
+  width: 452px;
+  margin: 10px auto;
 }
 
 #family-container {
   display: flex;
   flex-direction: column;
-  margin: 10px 50px;
+  width: 40%;
+  /* background-color: blue; */
+}
+
+#family-container label {
+  margin-bottom: 4px;
+}
+
+#family-container input {
+  margin: 8px 0;
+}
+
+#checkbox-content {
+  margin-left: 30px;
+}
+
+#checkbox-content div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.checkbox-input-container {
+  width: 80px;
+  margin-right: 30px;
+}
+
+#second-line {
+  border: 1px solid rgb(210, 210, 210);
+  width: 452px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #image-container {
   width: 45%;
   text-align: center;
   margin: auto;
-
-  /* background-color: blue; */
 }
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
