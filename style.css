@@ -176,6 +176,14 @@ main {
 
 textarea {
   resize: none;
+  height: 120px;
+}
+
+#textarea-container {
+  display: flex;
+  flex-direction: column;
+  width: 510px;
+  margin: auto;
 }
 
 #image-container {
