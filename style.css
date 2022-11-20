@@ -159,9 +159,23 @@ main {
 
 #second-line {
   border: 1px solid rgb(210, 210, 210);
-  width: 452px;
+  width: 510px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+#evaluation-container {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#evaluation-label-div {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: none;
 }
 
 #image-container {
