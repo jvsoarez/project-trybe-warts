@@ -179,6 +179,39 @@ textarea {
   height: 120px;
 }
 
+#agreement-checkbox-container {
+  width: 510px;
+  margin: 10px auto;
+}
+
+#submit-btn-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 510px;
+}
+
+#submit-btn-container button {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(143, 143, 144);
+  color: white;
+  border-radius: 6px;
+}
+
+footer {
+  color: white;
+  background-color: rgb(75, 75, 75);
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: fixed;
+  bottom:0;
+}
+
 #textarea-container {
   display: flex;
   flex-direction: column;
@@ -196,3 +229,6 @@ textarea {
   height: 500px;
 }
 
+#paragraph-content {
+  margin-left: 20px;
+}
