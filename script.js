@@ -99,10 +99,41 @@ function replaceInputsContent() {
   secondContainer.appendChild(createParagraph);
 }
 
+const rateRadioInputs = document.getElementsByClassName('rate');
+const evatualionContainer = document.querySelector('#evaluation-container');
+
+function replaceRate() {
+  const createParagraph = document.createElement('p');
+  for (let i = 0; i < rateRadioInputs.length; i += 1) {
+    if (rateRadioInputs[i].checked === true) {
+      createParagraph.innerText = `Avaliação: ${rateRadioInputs[i].value}`;
+    }
+  }
+  console.log(evatualionContainer.firstElementChild);
+  evatualionContainer.removeChild(evatualionContainer.firstElementChild);
+  console.log(evatualionContainer.firstElementChild);
+  evatualionContainer.removeChild(evatualionContainer.firstElementChild);
+  evatualionContainer.appendChild(createParagraph);
+}
+
+const commentTextArea = document.querySelector('#textarea');
+const textAreaContainer = document.querySelector('#textarea-container');
+
+function replaceTextArea() {
+  const createParagraph = document.createElement('p');
+  createParagraph.innerText = `Observações: ${commentTextArea.value}`;
+  textAreaContainer.removeChild(textAreaContainer.firstElementChild);
+  textAreaContainer.removeChild(textAreaContainer.firstElementChild);
+  textAreaContainer.removeChild(textAreaContainer.firstElementChild);
+  textAreaContainer.appendChild(createParagraph);
+}
+
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
   replaceInputsNameWithText();
   replaceInputsEmailAndSelectWithText();
   replaceInputsFamily();
   replaceInputsContent();
+  replaceRate();
+  replaceTextArea();
 });
