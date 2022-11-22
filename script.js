@@ -2,6 +2,8 @@ const loginInputEmail = document.getElementById('login-input-email');
 const loginInputPass = document.getElementById('login-input-pass');
 const loginButton = document.getElementById('login-button');
 
+// Faz validação do login
+
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
   if (loginInputEmail.value === 'tryber@teste.com' && loginInputPass.value === '123456') {
@@ -10,6 +12,8 @@ loginButton.addEventListener('click', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+// Faz com que o botão só esteja habilitado caso o agreement-checkbox esteja marcado, e altera cor do botão
 
 const submitBtn = document.querySelector('#submit-btn');
 const agreementCheckbox = document.querySelector('#agreement');
@@ -23,6 +27,8 @@ agreementCheckbox.addEventListener('change', () => {
   }
 });
 
+// Faz contagem de caracteres restantes no campo textarea de observações
+
 const textarea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 
@@ -31,10 +37,16 @@ textarea.addEventListener('input', () => {
   counter.innerText = 500 - num;
 });
 
+// Funções que pegam informações inputadas nos campos e exibe na tela após clicar no botão de enviar
+
+const CreatePrincipalSection = document.createElement('section');
+CreatePrincipalSection.setAttribute('id', 'principal-section');
 const sectionNameAndLastname = document.querySelector('.form-input-name-container');
 const firstContainer = document.querySelector('#first-container');
 const inputName = document.querySelector('#input-name');
 const inputLastName = document.querySelector('#input-lastname');
+
+// Nome e Sobrenome
 
 function replaceInputsNameWithText() {
   const createParagraph = document.createElement('p');
@@ -47,6 +59,8 @@ const sectionHouse = document.querySelector('.form-input-house-container');
 const inputEmail = document.querySelector('#input-email');
 const selectHouse = document.querySelector('#house');
 
+// Email e Casa
+
 function replaceInputsEmailAndSelectWithText() {
   const createParagraph = document.createElement('p');
   const createParagraphTwo = document.createElement('p');
@@ -56,6 +70,8 @@ function replaceInputsEmailAndSelectWithText() {
   firstContainer.appendChild(createParagraph);
   firstContainer.appendChild(createParagraphTwo);
 }
+
+// Família selecionada
 
 const radioInputsFamily = document.getElementsByClassName('family');
 const secondContainer = document.querySelector('#second-container');
@@ -71,6 +87,8 @@ function replaceInputsFamily() {
   secondContainer.removeChild(familyContainer);
   secondContainer.appendChild(createParagraph);
 }
+
+// Matéias que está com mais vontade de aprender
 
 const contentCheckBoxInpusts = document.getElementsByClassName('subject');
 const contentContainer = document.querySelector('#checkbox-content');
@@ -99,6 +117,8 @@ function replaceInputsContent() {
   secondContainer.appendChild(createParagraph);
 }
 
+// Avaliação selecionada
+
 const rateRadioInputs = document.getElementsByClassName('rate');
 const evatualionContainer = document.querySelector('#evaluation-container');
 
@@ -109,15 +129,18 @@ function replaceRate() {
       createParagraph.innerText = `Avaliação: ${rateRadioInputs[i].value}`;
     }
   }
-  console.log(evatualionContainer.firstElementChild);
   evatualionContainer.removeChild(evatualionContainer.firstElementChild);
-  console.log(evatualionContainer.firstElementChild);
   evatualionContainer.removeChild(evatualionContainer.firstElementChild);
   evatualionContainer.appendChild(createParagraph);
 }
 
+// Campo de observações
+
 const commentTextArea = document.querySelector('#textarea');
 const textAreaContainer = document.querySelector('#textarea-container');
+const formMain = document.querySelector('#evaluation-form');
+const line = document.querySelector('#line');
+const lineTwo = document.querySelector('#second-line');
 
 function replaceTextArea() {
   const createParagraph = document.createElement('p');
@@ -128,6 +151,15 @@ function replaceTextArea() {
   textAreaContainer.appendChild(createParagraph);
 }
 
+// Remove as linhas de decoração do Forms
+
+function removeLines() {
+  formMain.removeChild(line);
+  formMain.removeChild(lineTwo);
+}
+
+// Função que chama todas as outras funções de substituição, quando o botão é clicado
+
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
   replaceInputsNameWithText();
@@ -136,4 +168,5 @@ submitBtn.addEventListener('click', (event) => {
   replaceInputsContent();
   replaceRate();
   replaceTextArea();
+  removeLines();
 });
