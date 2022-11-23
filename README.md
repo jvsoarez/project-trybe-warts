@@ -39,6 +39,6 @@
 20. Create a counter with the ID counter containing the number of characters available in the text area, ranging from 500 to 0, which should update as something is typed into the text area ✔️
 21. Make sure that, when clicking on the Submit button, the content inside the <form> tag is replaced by the information filled in by the user ✔️
 
-🔗 Deploy [here](https://jvsoarez.github.io/project-trybe-warts/)
+🔗 Deploy [here](https://jvsoarez.github.io/project-trybewarts/)
 
 🙏🏽 Thanks for viewing this repository!
